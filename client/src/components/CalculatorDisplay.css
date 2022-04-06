@@ -1,15 +1,11 @@
 #calculator-display-container > h2 {
   color: #6b9080;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: left;
 }
 
 #calculator-display-container > p {
   display: inline;
-  padding-left: 20px;
-  text-align: left;
+  margin-left: 10%;
 }
 
 #total-value-low {
@@ -37,7 +33,3 @@
   font-style: bold;
 }
 
-#calculator-display-container {
-  border-radius: 3px;
-  text-align: left;
-}

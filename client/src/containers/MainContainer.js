@@ -6,7 +6,7 @@ import {
   calculateElectricityValue,
   calculateFlightValue,
   calculateTotalValue,
-} from "../helpers/Calculator";
+} from "../Helpers/Calculator.js";
 import FormContainer from "./FormContainer";
 import CalculatorDisplay from "../components/CalculatorDisplay";
 import "./MainContainer.css";
@@ -55,7 +55,8 @@ const MainContainer = () => {
   };
 
   return (
-    <div id="main-container">
+    <div className="main-content-container">
+    <div className="form-controls">
       <FormContainer
         handleElectricityCalculation={handleElectricityCalculation}
         handleCarCalculation={handleCarCalculation}
@@ -64,13 +65,14 @@ const MainContainer = () => {
         handleTotalCalculation={handleTotalCalculation}
         climateData={climateData}
       />
-      <CalculatorDisplay
+      <CalculatorDisplay className="calculator-display"
         electricityValue={electricityValue}
         carValue={carValue}
         dietValue={dietValue}
         flyingValue={flyingValue}
         totalValue={totalValue}
       />
+    </div>
     </div>
   );
 };

@@ -1,7 +1,41 @@
-#main-container {
+
+.main-content-container{
+  margin: auto;
+  width: 55%;
+}
+
+.form-controls {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  position: relative;
+  align-items: center;
   
+}
+.calculator-display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+
+}
+
+.hero-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../public/Assets/Nature.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 60%;
+  left: 20%;
+}
+
+.hero-text {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  font-size: x-large;
 }
